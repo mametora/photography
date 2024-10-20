@@ -90,6 +90,10 @@
         0xA40B : "DeviceSettingDescription",    //
         0xA40C : "SubjectDistanceRange",    // Distance to subject
 
+        // lens
+        0xA433 : "LensMake",
+        0xA434 : "LensModel",
+
         // other tags
         0xA005 : "InteroperabilityIFDPointer",
         0xA420 : "ImageUniqueID"            // Identifier assigned uniquely to each image

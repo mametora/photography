@@ -314,8 +314,18 @@
             for (var current in exif) {
                 var current_data = exif[current];
                 var exif_data = EXIF.getTag(img, current_data['tag']);
+                if (current_data['prefix']) {
+                    exif_data = current_data['prefix'] + exif_data;
+                }
+                if (current_data['suffix']) {
+                    exif_data += current_data['suffix'];
+                }
                 if (typeof exif_data !== "undefined") {
-                    template += '<i class="fa fa-' + current_data['icon'] + '" aria-hidden="true"></i> ' + exif_data + '&nbsp;&nbsp;';
+                    var icon = '';
+                    if (current_data['icon']) {
+                        icon = '<i class="fa fa-' + current_data['icon'] + '" aria-hidden="true"></i> ';
+                    }
+                    template += icon + exif_data + '&nbsp;&nbsp;';
                 }
             }
             return template;
