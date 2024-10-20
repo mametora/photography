@@ -3,7 +3,7 @@ baseurl: "https://photography.rampatra.com"
 #baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
-google_analytics: "UA-46465113-2"
+google_tag_manager: "GTM-5MTGXDH"
 
 # UI configs
 title: "Photography by Ram Patra"
